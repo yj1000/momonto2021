@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momonto</title>
+    <script defer src="js/index.js"></script>
+    <script defer src="js/bg.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="sign_out none">Change name</div>
+        <div class="clock none">00:00</div>
+    </header>
+    <main class="login_screen">
+        <h1>00:00</h1>
+        <form>
+            <input class="input_name" type="text" placeholder="What's your name?">
+            <span class="login_screen__change_bg">change Background</span>
+        </form>
+    </main>
+    <main class="main_screen none">
+        <h1>hello</h1>
+        <section>
+            <div class="area"></div>
+            <div class="menu">
+                <span class="menu__todo">To-Do List</span>
+                <span class="menu__cal">Calender</span>
+                <span class="menu__week">Week</span>
+                <span class="menu__weather">Weather</span>
+            </div>
+            <div class="content">
+                
+                <div id ="to_do_list" class="none">
+                    <h2>Today</h2>
+                    <div class="todo_box">
+                        <h3>Pending</h3>
+                    <ul class="pending">
+                        <form class="pending_form">
+                            <input placeholder="Pending List">
+                        </form>
+                    </ul>
+                    </div>
+                    <div class="todo_box">
+                        <h3>Finished</h3>
+                    <ul class="finished">
+                        <form class="finish_form">
+                            <input placeholder="Finished List">
+                        </form>
+                    </ul>
+                    </div>
+                    
+                </div>
+                <div id="calender" class="none">
+                    <div class="cal_header">
+                        <span class="cal_date">2021. 00</span>
+                        <div class="cal_month_btn">
+                            <span class="prev">
+                                <i class="fas fa-chevron-up"></i>
+                            </span>
+                            <span class="next">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <table class="cal_table">
+                        <thead class="cal_head">
+                            <tr>
+                                <th>Sun</th>
+                                <th>Mon</th>
+                                <th>Tue</th>
+                                <th>Wed</th>
+                                <th>Thu</th>
+                                <th>Fri</th>
+                                <th>Sat</th>
+                            </tr>
+                        </thead>
+                        <tbody class="cal_body">
+                        </tbody>
+                    </table>
+                    
+
+                </div>
+                <div id="week" class="none">
+                    <div class="week_table">
+                        <ul class="sun"><span>Sunday</span>
+                            <form class="sun_form"><input placeholder="sunday"></form>
+                        </ul>
+                        <ul class="mon"><span>Monday</span>
+                            <form class="mon_form"><input placeholder="monday"></form>
+                        </ul>
+                        <ul class="tue"><span>Tuesday</span>
+                            <form class="tue_form"><input placeholder="tueday"></form>
+                        </ul>
+                        <ul class="wed"><span>Wednesday</span>
+                            <form class="wed_form"><input placeholder="wednesday"></form>
+                        </ul>
+                        <ul class="thu"><span>Thursday</span>
+                            <form class="thu_form"><input placeholder="thurday"></form>
+                        </ul>
+                        <ul class="fri"><span>Friday</span>
+                            <form class="fri_form"><input placeholder="friday"></form>
+                        </ul>
+                        <ul class="sat"><span>Saturday</span>
+                            <form class="sat_form"><input placeholder="saturday"></form>
+                        </ul> 
+                    </div>
+                </div>
+                <div id="weather" class="none">
+                    <h1 class="weather__today__header">TODAY</h1>
+                    <ul>
+                        <li class="cityName"></li>
+                        <li class="main"></li>
+                        <li class="temp"></li>
+                        <li class="feels_like"></li>
+                        <li class="humidity"</li>
+                        <li class="wind_speed"></li>
+                        <li class="temp_min"></li>
+                        <li class="temp_max"></li>
+                        <li class="sunrise"></li>
+                        <li class="sunset"></li>
+                    </ul>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/calender.js"></script>
+    <script src="js/week.js"></script>
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+.week{
+    font-size: 1.5rem;
+    background-color: var(--contentbox-bg);
+    padding: 1rem;
+    box-sizing: border-box;
+    height: fit-content;
+}
+.week_table{
+    display: grid;
+    gap: 1rem;
+    grid-template-rows: repeat(7,minmax(min-content,max-content));
+}
+.week_table ul span{
+    writing-mode:vertical-lr;
+    transform: rotate(180deg);
+    font-weight: 600;
+    font-size: 1rem;
+}
+.week_table ul{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    border: 2px solid rgba(255,255,255,0.3);
+}
+
+.week_table ul:hover{
+    background-color:rgba(0, 0, 0, 0.3);
+}
+.week_table ul input::placeholder{
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+}
+.week_table ul input{
+    
+    background: none;
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 2rem;
+    border: 1px solid rgba(255,255,255,0.3);
+}
+.week_table ul input:focus,
+.week_table ul input:hover{
+    border: 1px solid white;
+}
+
+.week_table li{
+    display: inline-block;
+    margin: 1rem;
+}

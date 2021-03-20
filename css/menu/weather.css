@@ -1,0 +1,42 @@
+.weather{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 4rem 1fr;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 2px;
+    background-color: var(--contentbox-bg);
+    
+    padding: 1rem;
+    box-sizing: border-box;
+    
+}
+
+.weather h1{
+    font-size: 3rem;
+    text-align: center;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    border-left: 2px solid white;
+}
+.weather ul{
+    padding: 1rem 0;
+    font-size: 1.5rem;
+}
+.weather li{
+    border-bottom: 1px solid white;
+    line-height: 1.5;
+}
+.weather ul .cityName{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+} 
+.weather ul .main{
+    text-transform: uppercase;
+}
+.weather ul .temp,
+.weather ul .main{
+    font-size: 2.5rem;
+}

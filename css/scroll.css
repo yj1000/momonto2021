@@ -1,0 +1,6 @@
+::-webkit-scrollbar { width: 0.4rem; } /* 스크롤 바 */
+::-webkit-scrollbar-track { background:rgba(0,0,0,0.1); } /* 스크롤 바 밑의 배경 */
+::-webkit-scrollbar-thumb { background: white; } /* 실질적 스크롤 바 */
+::-webkit-scrollbar-thumb:hover { background:rgb(152, 233, 209);} /* 실질적 스크롤 바 위에 마우스를 올려다 둘 때 */
+::-webkit-scrollbar-thumb:active { background:rgb(176, 230, 214); } /* 실질적 스크롤 바를 클릭할 때 */
+::-webkit-scrollbar-button { display: none; } /* 스크롤 바 상 하단 버튼 */
