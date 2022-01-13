@@ -38,7 +38,7 @@ function changeBG() {
 function init() {
     paintBG();
     loginChangeBG.addEventListener("click", changeBG);
-    setInterval(changeBG, 10000);
+    //setInterval(changeBG, 10000);
 }
 
 init();
